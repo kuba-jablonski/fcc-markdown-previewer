@@ -1,4 +1,11 @@
-body {
-  background: red; }
+body, html {
+  height: 100%;
+  background: #f7fff7; }
+
+.hero {
+  margin-bottom: 10px; }
+
+.hero-body {
+  padding: 10px 0; }
 
 /*# sourceMappingURL=styles.css.map */

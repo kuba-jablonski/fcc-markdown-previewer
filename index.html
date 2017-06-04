@@ -19,6 +19,21 @@
                 </div>
             </div>
         </header>
+        <main class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <p class="control">
+                            <textarea v-model="markdown" class="textarea" value="Some text here"></textarea>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div v-html="interpretMarkdown" class="content"></div>
+                </div>
+            </div>
+        </main>
     </div>
 
 
