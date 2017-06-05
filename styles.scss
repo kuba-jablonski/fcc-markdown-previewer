@@ -1,11 +1,31 @@
-body, html {
+body,
+html,
+#app {
     height: 100%;
     background: #f7fff7;
+}
+
+header {
+    min-height: 10vh;
+}
+
+main {
+    .columns {
+        height: 80vh;
+        .control {
+            height: 100%
+        }
+    }
+}
+
+.textarea {
+    height: 100%;
 }
 
 .hero {
     margin-bottom: 10px;
 }
+
 .hero-body {
     padding: 10px 0;
 }

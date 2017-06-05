@@ -7,5 +7,15 @@ new Vue({
         interpretMarkdown() {
             return marked(this.markdown);
         }
+    },
+    methods: {
+        save() {
+            localStorage.setItem('markdown', this.markdown)
+        }
+    },
+    created() {
+        if (localStorage.getItem('markdown')) {
+            this.markdown = localStorage.getItem('markdown');
+        }
     }
 })

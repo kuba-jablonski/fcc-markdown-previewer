@@ -13,21 +13,27 @@
     <div id="app">
         <header class="hero is-primary is-bold">
             <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">Markdown Previewer</h1>
-                    <h2 class="subtitle">A freeCodeCamp Project</h2>
+                <div class="columns">
+                    <div class="column is-half">
+                        <div class="container">
+                            <h1 class="title">Markdown Previewer</h1>
+                            <h2 class="subtitle">A freeCodeCamp Project</h2>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="container">
+                            <button @click="save" class="button is-medium">Save</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
         <main class="container">
             <div class="columns">
                 <div class="column is-half">
-                    <div class="field">
-                        <label class="label">Message</label>
-                        <p class="control">
-                            <textarea v-model="markdown" class="textarea" value="Some text here"></textarea>
-                        </p>
-                    </div>
+                    <p class="control">
+                        <textarea v-model="markdown" class="textarea" value="Some text here"></textarea>
+                    </p>
                 </div>
                 <div class="column">
                     <div v-html="interpretMarkdown" class="content"></div>
